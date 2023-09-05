@@ -1,0 +1,50 @@
+/* estilo.css */
+
+/* Reset de Estilos */
+* {
+    margin:0; /* zerar a margem de todos os elementos */
+    padding:0; /* zerar o espaçamento interno de todod os elementos */
+    box-sizing: border-box; /* incluir padding e borda no cálculo do tamanho do elemento */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    
+    /* assim (cima, baixo, esquerda, direita) */
+    /* padding: 20px 20px 20px 20px; */
+
+    /* ou 20px em todas as direções */
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav li {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+main {
+    overflow: hidden;
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    height: 500px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    float: left;
+}
