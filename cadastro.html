@@ -19,6 +19,7 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section class="container">
            <form>
@@ -27,10 +28,99 @@
 
                 <div class="input-container">
                     <label for="titulo">Título</label>
-                    <input type="text" name="titulo" id="titulo" placeholder="Como eu era antes de Você" required autodocus>
+                    <input type="text" name="titulo" id="titulo" placeholder="Como eu era antes de Você" required autodocus>                    
+                </div>
+
+                <div class="input-container">
+                    <label for="autor">Autor</label>
+                    <input type="text" name="autor" id="autor" placeholder="Jojo Moyes" required>
                 </div>
                 
+                <div class="input-container">
+                    <label for="editora">Editora</label>
+                    <input type="text" name="editora" id="editora" placeholder="Intrínseca; 1ª edição (9 abril 2013)"required>
+                </div>
+
+                <div class="input-container">
+                    <label for="dtpublicacao">Publicação</label>
+                    <input type="date" name="dtpublicacao" id="dtpublicacao" required>
+                </div>
+
+                <div class="input-container">
+                    <label>Idioma</label>
+                    <div class="input-check">
+                        <input type="checkbox" name="idioma" value="Português" id="portugues">
+                        <label for="portugues">Português</label>
+                    </div>
+                    <div class="input-check">
+                        <input type="checkbox" name="idioma" value="Inglês" id="ingles">
+                        <label for="ingles">Inglês</label>
+                    </div>
+                    <div class="input-check">
+                        <input type="checkbox" name="idioma" value="Espanhol" id="espanhol">
+                        <label for="espanhol">Espanhol</label>
+                    </div>
+                </div>
+
+                <div class="input-container">
+                    <label for="isbn">8580573297</label>
+                    <input type="text" name="isbn" id="isbn" placeholder="ISBN do livro" pattern="\d{3}-\d{10}" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="ano">05 de Janeiro de 2012</label>
+                    <input type="number" name="ano" id="ano" placeholder="Ano de publicação" required>
+                </div>
+                
+                <div class="input-container">
+                    <label for="paginas">320 páginas</label>
+                    <input type="number" name="paginas" id="paginas" placeholder="Número de páginas" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="categoria">Categoria</label>
+                    <select name="categoria" id="categoria" required>
+                        <option value="">Selecione</option>
+                        <option value="Ação">Ação</option>
+                        <option value="Aventura">Aventura</option>
+                        <option value="Comédia">Comédia</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Ficção Científica">Ficção Científica</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Suspense">Suspense</option>
+                        <option value="Terror">Terror</option>
+                    </select>
+                </div>
+
+                <div class="input-container">
+                    <label>Estado do Livro</label>
+                    <div class="radio-group">
+                        <input type="radio" name="situacao" id="novo" value="Novo" required checked>
+                        <label for="novo">Novo</label>
+                      
+                        <input type="radio" name="situacao" id="usado" value="Usado" required>
+                        <label for="usado">Usado</label>
+                    </div>
+                </div>
+
+                <div class="input-container">
+                    <label for="resumo">Resumo</label>
+                    <textarea name="resumo" id="resumo" placeholder="Resumo do livro" rows="5" required></textarea>
+                </div>
+
+                <div class="input-container">
+                    <label for="capa">Capa</label>
+                    <input type="file" name="capa" id="capa" accept="image/*">
+                </div>
+
+                <div class="actions">
+                    <button type="submit">Cadastrar</button>
+                    <button type="reset">Limpar</button>
+                </div>
             </fieldset>
+            <footer>
+                <p>&copy; 2023 Livraria Fantástica | Criado por Nicolly Karoline</p>
+            </footer>
            </form>
         </section>
     </main>
